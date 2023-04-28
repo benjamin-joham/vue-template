@@ -3,7 +3,7 @@ import {
   defineStore,
   StateTree,
   _GettersTree,
-} from 'pinia';
+} from 'pinia'
 
 interface IMyStoreState extends StateTree { // TODO: update <MyStore>.
   // Add types for the state.
@@ -19,10 +19,10 @@ interface IMyStoreActions { // TODO: update <MyStore>.
 
 export type TMyStoreStore = Store<string, IMyStoreState, IMyStoreGetters, IMyStoreActions>;
 
-const storeName = 'MyStore'; // TODO: update <MyStore>.
+const storeName = 'MyStore' // TODO: update <MyStore>.
 
 export default defineStore<typeof storeName, IMyStoreState, IMyStoreGetters, IMyStoreActions>(storeName, {
   state: (): IMyStoreState => ({}),
   getters: {},
   actions: {},
-});
+})
